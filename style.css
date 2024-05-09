@@ -411,7 +411,9 @@ body {
     border: none;
     cursor: pointer;
     overflow: hidden;
-  } *//* .change-video-btn {
+  } */
+
+  /* .change-video-btn {
     position: absolute;
     top: 5;
     right: -15;
@@ -419,12 +421,3 @@ body {
     margin-left: 5px;
   }
 
-  .change-video-btn {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%; 
-    background-color: #007bff; 
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-  } */
