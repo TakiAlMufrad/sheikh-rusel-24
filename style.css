@@ -1,0 +1,413 @@
+*,
+** {
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  width: 150px;
+  height: 90px;
+  font-size: 18px;
+  background-color: rgb(49, 190, 56);
+  cursor: pointer;
+  font-style: oblique;
+}
+
+.video {
+  position: absolute;
+  top: 74vh;
+  left: 40vw;
+}
+
+body {
+    overflow: hidden; /* Prevent scrolling */
+    background: url("Background.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+  /* /border: solid 1px #ccc; */
+}
+
+.header {
+  text-align: center;
+}
+
+.buttoncontent1 {
+  width: 100%;
+  height: auto;
+}
+
+.buttoncontent1 {
+  width: 100%;
+  background-size: cover;
+}
+
+.sidebutton {
+    width: 20%;
+  margin-top: 45px;
+  margin-left: 30px; /* Move the whole side button container a little to the right */
+  }
+  
+ 
+
+  .sidebutton button {
+    padding: 10px; /* Adjust padding to make buttons slightly smaller */
+  width: 145px; /* Adjust width to maintain 10:6 ratio */
+  height: 89px; /* Adjust height to maintain 10:6 ratio */
+  font-size: 16px; /* Adjust font size to fit smaller buttons */
+  background-color: rgb(49, 190, 56);
+  cursor: pointer;
+  font-style: oblique;
+  margin-bottom: 8px; /* Add space between buttons */
+  border-radius: 8px; /* Make the corners more rounded */
+  }
+  
+
+.dropdown {
+    position: absolute;
+    top: 135px;
+    right: 30px;
+    display: inline-block;
+  }
+  
+  
+  /* Style for the dropdown button */
+.dropbtn {
+    background-color: #3498db; /* Initial blue color */
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px; /* Add rounded corners */
+    margin-bottom: 10px; /* Add space between button and dropdown */
+    transition: background-color 0.5s; /* Slow transition for background color */
+  }
+  
+  /* Hover effect for the dropdown button */
+  .dropbtn:hover {
+    background-color: #ff0000; /* Red color on hover */
+    transform: scale(1.1); /* Scale the button to 110% of its size */
+  }
+  
+  
+  /* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px; /* Add rounded corners to the dropdown menu */
+    transition: opacity 0.5s; /* Add a slow transition for opacity */
+  }
+  
+  /* Style for the links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #ddd; /* Add background color to the links */
+    border-radius: 5px; /* Add rounded corners to the links */
+    margin-bottom: 5px; /* Add some spacing between links */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  /* Hover effect for the links inside the dropdown */
+  .dropdown-content a:hover {
+    background-color: #bbb; /* Change background color on hover */
+  }
+  
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    animation: dropdown-animation 0.5s ease;
+  }
+  
+  @keyframes dropdown-animation {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 20px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.dropdownModalContent {
+    height: 90%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close1 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close3 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close4 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close5 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close5:hover,
+.close5:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close6 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close6:hover,
+.close6:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.closeDropdown1 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeDropdown1:hover,
+  .closeDropdown1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.buttononstyle {
+  position: relative;
+  overflow: hidden;
+  padding: 20px; /* Adjust padding as needed */
+  z-index: 1; /* Ensure this is higher than the ::before pseudo-element */
+  transition: right 0.5s ease-in-out;
+  right: 0;
+}
+.buttononstyle:hover {
+  right: -20px;
+}
+
+.buttononstyle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px; /* Adjust size as needed */
+  height: 10px; /* Adjust size as needed */
+  border-radius: 50%;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, background-color 0.3s;
+  z-index: -1; /* Lower than the text, ensuring it's behind */
+}
+
+.buttononstyle:hover::before {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  background-color: rgb(255, 0, 0); /* Dark red overlay */
+}
+
+.contact-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999; /* Updated z-index */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  /* Style for the contact info partition */
+  .contact-info {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -300px; /* Initially hidden off-screen */
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s; /* Smooth transition for sliding effect */
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+
+  
+  .contact-info p {
+    margin-bottom: 10px;
+  }  
+
+  .video-container {
+    position: absolute;
+    top: 74vh;
+    left: 40vw;
+  }
+  
+  .video-wrapper {
+    display: inline-block;
+  }
+  
+  /* .change-video-btn {
+    position: absolute;
+    top: 5;
+    right: -15;
+    margin-top: 90px;
+    margin-left: 5px;
+  }
+
+  .change-video-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    background-color: #007bff; 
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+  } */
+  .change-video-btn {
+    position: absolute;
+    top: 5px;
+    right: -69px;
+    margin-top: 90px;
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Make it circular */
+    background-color: #007bff; 
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Add transition effect */
+  }
+  
+  /* Add hover effect */
+  .change-video-btn:hover {
+    transform: translateX(9px); /* Move the button a bit to the right */
+  }
+  
