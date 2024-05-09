@@ -409,11 +409,11 @@ body {
     border-radius: 50%; 
     background-color: #007bff; 
     border: none;
+    cursor: pointer;
     overflow: hidden;
   } */
 
   /* .change-video-btn {
     position: absolute;
-    right: -15;
   }
 
