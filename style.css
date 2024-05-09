@@ -373,23 +373,7 @@ body {
     display: inline-block;
   }
   
-  /* .change-video-btn {
-    position: absolute;
-    top: 5;
-    right: -15;
-    margin-top: 90px;
-    margin-left: 5px;
-  }
-
-  .change-video-btn {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%; 
-    background-color: #007bff; 
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-  } */
+  
   .change-video-btn {
     position: absolute;
     top: 5px;
@@ -411,3 +395,36 @@ body {
     transform: translateX(9px); /* Move the button a bit to the right */
   }
   
+/* .change-video-btn {
+    position: absolute;
+    top: 5;
+    right: -15;
+    margin-top: 90px;
+    margin-left: 5px;
+  }
+
+  .change-video-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    background-color: #007bff; 
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+  } *//* .change-video-btn {
+    position: absolute;
+    top: 5;
+    right: -15;
+    margin-top: 90px;
+    margin-left: 5px;
+  }
+
+  .change-video-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    background-color: #007bff; 
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+  } */
