@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const linkDropdownNew2 = document.getElementById("dropdownNew2");
 
   linkDropdownNew1.onclick = function () {
-    iframe1.src= "https://www.youtube.com/watch?v=NHnLEjVVkKc"
+    iframe1.src= "https://www.youtube.com/embed/NHnLEjVVkKc"
     modalDropdown.style.display = "block";
   };
 
