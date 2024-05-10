@@ -39,6 +39,24 @@ linkDropdown6.onclick = function () {
   modalDropdown.style.display = "block";
 };
 
+document.addEventListener("DOMContentLoaded", function () {
+  // Existing dropdown event listeners
+  // ...
+
+  // New dropdown event listeners
+  const linkDropdownNew1 = document.getElementById("dropdownNew1");
+  const linkDropdownNew2 = document.getElementById("dropdownNew2");
+
+  linkDropdownNew1.onclick = function () {
+    iframe1.src= "https://www.youtube.com/watch?v=NHnLEjVVkKc"
+    modalDropdown.style.display = "block";
+  };
+
+  linkDropdownNew2.onclick = function () {
+    // Handle click for dropdownNew2
+  };
+});
+
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
   modalDropdown.style.display = "none";
@@ -50,6 +68,10 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+
+
+
 
 var videoNum = 1;
 
