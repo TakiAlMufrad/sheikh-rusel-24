@@ -1,19 +1,21 @@
 const iframe1 = document.getElementById("iframe1");
+const modalDropdown = document.getElementById("myModalDropdown1");
+const linkDropdown1 = document.getElementById("dropdown1");
+const linkDropdown2 = document.getElementById("dropdown2");
+const linkDropdown3 = document.getElementById("dropdown3");
+const linkDropdown4 = document.getElementById("dropdown4");
+const linkDropdown5 = document.getElementById("dropdown5");
+const linkDropdown6 = document.getElementById("dropdown6");
+const span = document.getElementsByClassName("closeDropdown1")[0];
 
-// Get the modal
-var modalDropdown = document.getElementById("myModalDropdown1");
+// Function to stop video playback and close modal
+function closeModal() {
+  modalDropdown.style.display = "none";
+  // Stop the video playback
+  iframe1.src = "";
+}
 
-// Get the button that opens the modal
-var linkDropdown1 = document.getElementById("dropdown1");
-var linkDropdown2 = document.getElementById("dropdown2");
-var linkDropdown3 = document.getElementById("dropdown3");
-var linkDropdown4 = document.getElementById("dropdown4");
-var linkDropdown5 = document.getElementById("dropdown5");
-var linkDropdown6 = document.getElementById("dropdown6");
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("closeDropdown1")[0];
-
-// When the user clicks the button, open the modal
+// Event listeners for dropdown buttons
 linkDropdown1.onclick = function () {
   iframe1.src = "https://takialmufrad.github.io/Exylance/";
   modalDropdown.style.display = "block";
@@ -39,6 +41,16 @@ linkDropdown6.onclick = function () {
   modalDropdown.style.display = "block";
 };
 
+// Event listener for the close button
+span.onclick = closeModal;
+
+// Event listener for clicking outside the modal
+window.onclick = function (event) {
+  if (event.target == modalDropdown) {
+    closeModal();
+  }
+};
+
 document.addEventListener("DOMContentLoaded", function () {
   // Existing dropdown event listeners
   // ...
@@ -48,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const linkDropdownNew2 = document.getElementById("dropdownNew2");
 
   linkDropdownNew1.onclick = function () {
-    iframe1.src= "https://www.youtube.com/embed/fQzAAyFzOLk"
+    iframe1.src = "https://www.youtube.com/embed/fQzAAyFzOLk";
     modalDropdown.style.display = "block";
   };
 
@@ -56,20 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Handle click for dropdownNew2
   };
 });
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modalDropdown.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
-
-
 
 
 
