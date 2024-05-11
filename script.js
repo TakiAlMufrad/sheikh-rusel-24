@@ -58,26 +58,12 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 });
 
-// Get the <span> element that closes the modal containing the YouTube video
-var spanDropdown = document.getElementsByClassName("closeDropdown1")[0];
-
-// When the user clicks on <span> (x), close the modal containing the YouTube video
-spanDropdown.onclick = function () {
-  modalDropdown.style.display = "none";
-  pauseYouTubeVideo();
-};
-
-// Function to pause the YouTube video
-function pauseYouTubeVideo() {
-  var iframe = document.getElementById("iframe1");
-  var iframeWindow = iframe.contentWindow;
-  iframeWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-}
 
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
   modalDropdown.style.display = "none";
+  iframe1.src=""
 };
 
 // When the user clicks anywhere outside of the modal, close it
