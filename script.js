@@ -54,7 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
   linkDropdownNew2.onclick = function () {
-    // Handle click for dropdownNew2
+    iframe1.src = "https://takialmufrad.github.io/freelancers/"
+    modalDropdown.style.display = "block";
   };
 });
 
