@@ -1,3 +1,6 @@
+alert("Note: This Website Is Built For 100x Resolution And Ratio. Please Take Your Tab To 100x Zoom. Thanks")
+
+
 const iframe1 = document.getElementById("iframe1");
 
 // Get the modal
